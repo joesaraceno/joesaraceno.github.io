@@ -1,0 +1,30 @@
+{
+  "name": "joesaraceno.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joesaraceno/joesaraceno.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joesaraceno/joesaraceno.github.io/issues"
+  },
+  "homepage": "https://github.com/joesaraceno/joesaraceno.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {}
+}
