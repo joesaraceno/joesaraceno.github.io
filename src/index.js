@@ -1,2 +1,3 @@
 import "./sass/main.scss"
-// import Background from './background.png';
+
+console.log("Welcome to Joe Saraceno's github page. seriously WIP.");
