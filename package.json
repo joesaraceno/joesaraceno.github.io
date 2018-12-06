@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/joesaraceno/joesaraceno.github.io/issues"
   },
-  "homepage": "https://github.com/joesaraceno/joesaraceno.github.io#readme",
+  "homepage": "https://josesaraceno.github.io/",
   "devDependencies": {
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
@@ -26,5 +28,7 @@
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
