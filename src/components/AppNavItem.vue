@@ -11,9 +11,6 @@ export default {
   props: [
     'item'
   ],
-  created: () => {
-    console.log(this.item);
-  },
   data () {
     return {
 
@@ -26,6 +23,14 @@ export default {
 .nav-item-wrapper {
   background-color: transparent;
   width: 80px;
+  a:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 4px;
+    border-bottom: 1px solid black;
+  }
 }
 
 </style>

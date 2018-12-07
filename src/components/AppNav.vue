@@ -46,7 +46,9 @@ export default {
 .nav-wrapper {
   background-color: transparent;
   width: 100%;
-  margin-left: 20px;
+  padding-left: 12px;
+  padding-top: 8px;
+  height: 65px;
   .nav-list {
     display: flex;
     justify-content: flex-start;
