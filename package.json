@@ -7,7 +7,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "vue": "^2.5.11"
