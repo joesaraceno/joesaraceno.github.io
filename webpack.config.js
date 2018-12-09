@@ -52,19 +52,33 @@ module.exports = {
               'sass-loader?indentedSyntax'
             ]
           }
-          // other vue-loader options go here
         }
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: [/node_modules/, /deploy\.js/]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
         ]
+      },
+      {
+        test: /\.(ico|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        exclude: /favicon\.ico$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
+      },
+      {
+        test: /favicon\.ico$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash:8]',
+        },
       },
     ]
   },
