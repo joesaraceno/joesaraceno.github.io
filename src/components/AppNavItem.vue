@@ -21,8 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .nav-item-wrapper {
-  background-color: transparent;
-  width: 80px;
+  width: 100px;
   a:after {
     content: "";
     display: block;
