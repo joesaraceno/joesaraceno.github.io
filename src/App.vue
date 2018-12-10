@@ -1,11 +1,16 @@
 <template>
   <div id="app">
     <app-nav></app-nav>
+
+      <div style="height: 700px;"></div>
+
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import  AppNav from "./components/AppNav.vue";
+import AppNav from './components/AppNav.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
   name: 'app',
   data () {
@@ -14,6 +19,7 @@ export default {
   },
   components: {
     'app-nav': AppNav,
+    'app-footer': AppFooter,
   }
 
 
@@ -22,7 +28,6 @@ export default {
 
 <style lang="scss">
 #app {
-  min-height: 1000px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
