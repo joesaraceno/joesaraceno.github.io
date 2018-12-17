@@ -43,5 +43,6 @@ ul {
 }
 .main {
   height: 800px;
+  padding: 56px 200px 0;
 }
 </style>
