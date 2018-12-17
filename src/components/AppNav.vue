@@ -47,8 +47,6 @@ export default {
   position: fixed;
   background-color: white;
   width: 100%;
-  padding-left: 12px;
-  padding-top: 8px;
   height: 65px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   filter: opacity(0.8);
@@ -57,6 +55,10 @@ export default {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+  }
+  &.hidden {
+    height: 0;
+    transition: 1ms height;
   }
 }
 

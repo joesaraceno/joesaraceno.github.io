@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <app-nav></app-nav>
-
-      <div style="height: 700px;"></div>
-
+    <div class="main"></div>
     <app-footer></app-footer>
   </div>
 </template>
@@ -42,5 +40,8 @@ h1, h2 {
 ul {
   list-style-type: none;
   padding: 0;
+}
+.main {
+  height: 1000px;
 }
 </style>
