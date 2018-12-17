@@ -44,21 +44,22 @@ export default {
 
 <style lang="scss" scoped>
 .nav-wrapper {
+  transition: all .3s ease-in-out;
+  opacity: 0.8;
+  top: 0;
   position: fixed;
   background-color: white;
   width: 100%;
   height: 65px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  filter: opacity(0.8);
-  -webkit-filter: opacity(0.8);
   .nav-list {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
   }
   &.hidden {
-    height: 0;
-    transition: 1ms height;
+    top: -65px;
+    opacity: 0;
   }
 }
 

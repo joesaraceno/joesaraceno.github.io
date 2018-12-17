@@ -55,9 +55,6 @@ export default {
         color: #FFFFFF;
         font-size: 13px;
       }
-      .icons {
-
-      }
     }
   }
 </style>
