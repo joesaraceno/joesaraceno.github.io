@@ -33,7 +33,6 @@ export default {
 
 <style lang="scss" scoped>
   .footer-wrapper {
-    position: absolute;
     bottom: 0;
     box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.2);
     filter: opacity(0.8);

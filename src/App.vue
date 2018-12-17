@@ -42,6 +42,6 @@ ul {
   padding: 0;
 }
 .main {
-  height: 1000px;
+  height: 800px;
 }
 </style>
