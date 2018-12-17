@@ -50,7 +50,7 @@ export default {
   position: fixed;
   background-color: white;
   width: 100%;
-  height: 65px;
+  height: 56px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   .nav-list {
     display: flex;
@@ -58,7 +58,7 @@ export default {
     flex-direction: row;
   }
   &.hidden {
-    top: -65px;
+    top: -56px;
     opacity: 0;
   }
 }
