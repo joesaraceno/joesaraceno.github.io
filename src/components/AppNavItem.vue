@@ -17,6 +17,7 @@ export default {
 .nav-item-wrapper {
   width: 100px;
   a {
+    color: #595e66;
     font-weight: bold;
     &:after {
       transition: visibility 0.4s, opacity 0.4s ease-in;

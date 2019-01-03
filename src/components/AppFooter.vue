@@ -5,7 +5,7 @@
       </ul>
     </div>
     <div class="footer-column">
-      <span class="copy">&copy; Joe Saraceno - {{ new Date().getFullYear() }}</span>
+      <span class="copy">&copy; Joe Saraceno <span class="slash"> /</span> {{ new Date().getFullYear() }}</span>
     </div>
     <div class="footer-column">
 
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-// import Icon from '../assets/Icons';
 export default {
   name: 'AppFooter',
   data() {
@@ -23,7 +22,6 @@ export default {
       ]
     }
   }
-
 };
 </script>
 
@@ -48,6 +46,11 @@ export default {
       .copy {
         color: #FFFFFF;
         font-size: 15px;
+        .slash {
+          font-size: 26px; 
+          position: relative;
+          top: 4px;
+        }
       }
     }
   }
