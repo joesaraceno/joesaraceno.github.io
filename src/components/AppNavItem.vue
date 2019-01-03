@@ -9,12 +9,7 @@ export default {
   name: 'AppNavItem',
   props: [
     'item'
-  ],
-  data () {
-    return {
-
-    }
-  }
+  ]
 }
 </script>
 
@@ -22,8 +17,9 @@ export default {
 .nav-item-wrapper {
   width: 100px;
   a {
+    font-weight: bold;
     &:after {
-      transition: visibility .2s, opacity 0.3s ease-in;
+      transition: visibility 0.4s, opacity 0.4s ease-in;
       visibility: visible;
       opacity: 0;
       content: "";
@@ -31,7 +27,7 @@ export default {
       margin: 0 auto;
       width: 50%;
       padding-top: 4px;
-      border-bottom: 1px solid black;
+      border-bottom: 2px solid #595e66;
     }
     &:hover {
       &:after {

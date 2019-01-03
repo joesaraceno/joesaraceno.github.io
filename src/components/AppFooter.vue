@@ -5,7 +5,7 @@
       </ul>
     </div>
     <div class="footer-column">
-      <span class="copy">&copy; Joe Saraceno {{ new Date().getFullYear() }}</span>
+      <span class="copy">&copy; Joe Saraceno - {{ new Date().getFullYear() }}</span>
     </div>
     <div class="footer-column">
 
@@ -20,10 +20,6 @@ export default {
   data() {
     return {
       links: [
-        // {
-          // ref: ''
-          // img: ''
-        // }
       ]
     }
   }
@@ -33,7 +29,6 @@ export default {
 
 <style lang="scss" scoped>
   .footer-wrapper {
-    bottom: 0;
     box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.2);
     filter: opacity(0.8);
     -webkit-filter: opacity(0.8);
@@ -52,7 +47,7 @@ export default {
       padding: 20px;
       .copy {
         color: #FFFFFF;
-        font-size: 13px;
+        font-size: 15px;
       }
     }
   }

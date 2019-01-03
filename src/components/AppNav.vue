@@ -20,18 +20,22 @@ export default {
         {
           id: 0,
           name: "Home",
+          link: '/'
         },        
         {
           id: 1,
           name: "Work",
+          link: '/work'
         },
         {
           id: 2,
           name: "About",
+          link: '/about'
         },
         {
           id: 3,
           name: "Contact",
+          link: '/contact'
         }
       ]
     }
@@ -45,6 +49,7 @@ export default {
 <style lang="scss" scoped>
 .nav-wrapper {
   transition: all .3s ease-in-out;
+  padding-top: 2px;
   opacity: 0.8;
   top: 0;
   position: fixed;
