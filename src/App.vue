@@ -31,6 +31,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }
 
 h1, h2 {
@@ -42,7 +45,11 @@ ul {
   padding: 0;
 }
 .main {
-  height: 800px;
+  flex: 1 0 auto;
   padding: 56px 200px 0;
+  .filler {
+    font-size: 20px;
+    padding: 50px 0;
+  }
 }
 </style>

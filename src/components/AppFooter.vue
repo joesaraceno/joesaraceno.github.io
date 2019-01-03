@@ -27,10 +27,11 @@ export default {
 
 <style lang="scss" scoped>
   .footer-wrapper {
+    flex-shrink: 0;
     box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.2);
     filter: opacity(0.8);
     -webkit-filter: opacity(0.8);
-    height: 100px;
+    height: 120px;
     background-color: #504e4e;
     display: flex;
     justify-content: space-evenly;
