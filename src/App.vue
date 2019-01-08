@@ -3,10 +3,15 @@
     <app-nav></app-nav>
     <div class="main">
       <div class="profile-wrapper">
-        <transition name="slide-fade" appear>
+        <transition 
+          name="slide-fade" 
+          appear
+          v-on:after-enter="show = true">
           <app-profile-pic></app-profile-pic>
         </transition>
-        <app-profile-text></app-profile-text>
+        <transition name="slide-from-top">
+          <app-profile-text v-show="show"></app-profile-text>
+        </transition>
       </div>
     </div>
     <app-footer></app-footer>
@@ -20,6 +25,11 @@ import AppProfilePic from './components/AppProfilePic.vue';
 import AppProfileText from './components/AppProfileText.vue';
 export default {
   name: 'app',
+  data () {
+    return {
+      show: false
+    }
+  },
   components: {
     'app-nav': AppNav,
     'app-footer': AppFooter,
@@ -63,6 +73,13 @@ ul {
   }
   .slide-fade-enter {
     transform: translateX(-100%);
+    opacity: 0;
+  }
+  .slide-from-top-enter-active {
+    transition: all 1s ease-out;
+  }
+  .slide-from-top-enter {
+    transform: translateY(-100px);
     opacity: 0;
   }
   .profile-wrapper {

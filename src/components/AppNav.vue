@@ -25,17 +25,17 @@ export default {
         {
           id: 1,
           name: "Work",
-          link: '/work'
+          link: '#work'
         },
         {
           id: 2,
           name: "About",
-          link: '/about'
+          link: '#about'
         },
         {
           id: 3,
           name: "Contact",
-          link: '/contact'
+          link: '#contact'
         }
       ]
     }

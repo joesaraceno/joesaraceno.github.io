@@ -34,7 +34,9 @@ export default {
 </script>
 <style lang="scss" scoped>
   .profile-text-list {
+    margin: auto;
     margin-top: 0;
+    justify-self: center;
     .profile-text-item {
       .heading {
         margin-top: 0;
