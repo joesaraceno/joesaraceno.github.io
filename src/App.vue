@@ -1,7 +1,14 @@
 <template>
   <div id="app">
     <app-nav></app-nav>
-    <div class="main"></div>
+    <div class="main">
+      <div class="profile-wrapper">
+        <transition name="slide-fade" appear>
+          <app-profile-pic></app-profile-pic>
+        </transition>
+        <app-profile-text></app-profile-text>
+      </div>
+    </div>
     <app-footer></app-footer>
   </div>
 </template>
@@ -9,15 +16,15 @@
 <script>
 import AppNav from './components/AppNav.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppProfilePic from './components/AppProfilePic.vue';
+import AppProfileText from './components/AppProfileText.vue';
 export default {
   name: 'app',
-  data () {
-    return {
-    }
-  },
   components: {
     'app-nav': AppNav,
     'app-footer': AppFooter,
+    'app-profile-pic': AppProfilePic,
+    'app-profile-text': AppProfileText,
   }
 
 
@@ -46,10 +53,23 @@ ul {
 }
 .main {
   flex: 1 0 auto;
-  padding: 56px 200px 0;
+  padding: 58px 200px 0;
   .filler {
     font-size: 20px;
     padding: 50px 0;
+  }
+  .slide-fade-enter-active {
+    transition: all 1s ease-out;
+  }
+  .slide-fade-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .profile-wrapper {
+    padding-top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 </style>

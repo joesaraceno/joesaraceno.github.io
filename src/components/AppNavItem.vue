@@ -16,11 +16,12 @@ export default {
 <style lang="scss" scoped>
 .nav-item-wrapper {
   width: 100px;
+  padding: 0 32px;
   a {
     color: #1b1d1f;
     font-weight: bold;
     &:after {
-      transition: visibility 0.4s, opacity 0.4s ease-in;
+      transition: visibility 0.3s, opacity 0.3s ease-in-out;
       visibility: visible;
       opacity: 0;
       content: "";
