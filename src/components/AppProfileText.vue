@@ -1,10 +1,10 @@
 <template>
-  <ul class="profile-text-list">
-    <li class="profile-text-item" v-for="item in list" :key="item.id">
+  <transition-group selector="ul" class="profile-text-list">
+    <li v-show="show" class="profile-text-item" v-for="(item, index) in list" :key="item.id">
       <h3 class="heading">{{ item.heading }}</h3>
       <p class="content">{{ item.content }}</p>
     </li>
-  </ul>
+  </transition-group>
 </template>
 <script>
 export default {
@@ -14,26 +14,32 @@ export default {
       list: [
         {
           id: 0,
+          showing: false,
           heading: 'Joe Saraceno',
           content: 'Web developer'
         },
         {
           id: 1,
+          showing: false,
           heading: 'Skills include',
           content: 'New frameworks, full stack'
         },
         {
           id: 2,
+          showing: false,
           heading: 'Reach out',
           content: 'I\'m available for hire' 
         },  
       ]
     }
-  }
+  },
+  props: ['show'],
+  computed: {},
 }
 </script>
 <style lang="scss" scoped>
   .profile-text-list {
+    list-style-type: none;
     margin: auto;
     margin-top: 0;
     justify-self: center;

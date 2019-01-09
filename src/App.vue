@@ -6,11 +6,11 @@
         <transition 
           name="slide-fade" 
           appear
-          v-on:after-enter="show = true">
+          v-on:after-enter="profileListShowing = true">
           <app-profile-pic></app-profile-pic>
         </transition>
         <transition name="slide-from-top">
-          <app-profile-text v-show="show"></app-profile-text>
+          <app-profile-text show="profileListShowing" v-show="profileListShowing"></app-profile-text>
         </transition>
       </div>
     </div>
@@ -27,7 +27,7 @@ export default {
   name: 'app',
   data () {
     return {
-      show: false
+      profileListShowing: false
     }
   },
   components: {
@@ -36,8 +36,6 @@ export default {
     'app-profile-pic': AppProfilePic,
     'app-profile-text': AppProfileText,
   }
-
-
 }
 </script>
 
@@ -64,10 +62,6 @@ ul {
 .main {
   flex: 1 0 auto;
   padding: 58px 200px 0;
-  .filler {
-    font-size: 20px;
-    padding: 50px 0;
-  }
   .slide-fade-enter-active {
     transition: all 1s ease-out;
   }
@@ -83,7 +77,7 @@ ul {
     opacity: 0;
   }
   .profile-wrapper {
-    padding-top: 140px;
+    padding: 140px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
