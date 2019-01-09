@@ -28,7 +28,7 @@ export default {
           id: 2,
           showing: false,
           heading: 'Reach out',
-          content: 'I\'m available for hire' 
+          content: 'Please contact me with your plans' 
         },  
       ]
     }
